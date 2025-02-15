@@ -22,6 +22,5 @@ Os exercícios estão separados em pastas de acordo com sua categoria.
 Para compilar um exercício, acesse a pasta correspondente e use um compilador C++ (por exemplo, g++ ou Visual Studio).
 
 Exemplo:
-cd Iniciante
 g++ 3343-AtackOnGasparini.cpp -o Atack.out
 ./Atack.out
