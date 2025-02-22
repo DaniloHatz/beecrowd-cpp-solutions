@@ -1,10 +1,17 @@
 #include <iostream>
+#include <cmath>
 
 int main() {
-	unsigned short xF, yF, xI, yY, v, r1, r2;
-	std::cin >> xF >> yF >> xI >> yY >> v >> r1 >> r2;
+    int xF, yF, xI, yI, v, r1, r2;
+    std::cin >> xF >> yF >> xI >> yI >> v >> r1 >> r2;
 
+    double dx = xI - xF;
+    double dy = yI - yF;
+    double D = sqrt(dx * dx + dy * dy);
 
+    double finalDistance = D + 1.5 * v;
 
-	return 0;
+    std::cout << (finalDistance <= r1 + r2 ? 'Y' : 'N') << "\n";
+
+    return 0;
 }
