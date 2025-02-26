@@ -3,15 +3,22 @@
 
 int main() {
     int xF, yF, xI, yI, v, r1, r2;
-    std::cin >> xF >> yF >> xI >> yI >> v >> r1 >> r2;
 
-    double dx = xI - xF;
-    double dy = yI - yF;
-    double D = sqrt(dx * dx + dy * dy);
+    while (std::cin >> xF >> yF >> xI >> yI >> v >> r1 >> r2)
+    {
+        double dx = xI - xF;
+        double dy = yI - yF;
+        double D = sqrt(dx * dx + dy * dy);
 
-    double finalDistance = D + 1.5 * v;
+        double finalDistance = D + 1.5 * v;
 
-    std::cout << (finalDistance <= r1 + r2 ? 'Y' : 'N') << "\n";
+        double totalRange = r1 + r2;
+
+        if (finalDistance <= totalRange)
+            std::cout << "Y\n";
+        else
+            std::cout << "N\n";
+    }
 
     return 0;
 }
