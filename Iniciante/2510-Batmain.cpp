@@ -9,7 +9,7 @@ int main() {
     for (unsigned int i = 0; i < entradas; ++i)
     {
         scanf("%s", vilao);
-        if (std::strcmp(vilao, "Batmain") != 0)
+        if (std::strcmp(vilao, "Batmain"))
             printf("Y\n");
         else
             printf("N\n");
